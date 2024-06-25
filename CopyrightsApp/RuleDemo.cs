@@ -53,6 +53,15 @@ namespace CopyrightsApp
             };
             Rules.Add(weapp);
 
+            Rule flutter = new Rule() { 
+                FileExtension = "File \".dart\"",
+                LineComment = "LineComment \"//\"",
+                BlockCommentStart = "BlockCommentStart \"/*\"",
+                BlockCommentEnd = "BlockCommentEnd \"*/\"",
+            
+            };
+            Rules.Add(flutter);
+
 
             foreach (var rule in Rules)
             {

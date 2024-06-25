@@ -11,6 +11,7 @@ namespace CopyrightsApp
         private static readonly string LineCommentLineStart = "LineComment";
         private static readonly string BlockCommentStartLineStart = "BlockCommentStart";
         private static readonly string BlockCommentEndLineStart = "BlockCommentEnd";
+        private static readonly string IgnoreDirectoryName = "IgnoreDirectoryName";
 
         public static void ImportRules(int index)
         {

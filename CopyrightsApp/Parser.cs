@@ -22,6 +22,23 @@ namespace CopyrightsApp
         }
         private static void ParseFile(string filePath, Rule rule)
         {
+            //            string[] ignoreDirectoryNames = rule.IgnoreDirectoryName.Split(' ');
+            //            for (int i = 0; i < ignoreDirectoryNames.Length; i++)
+            //            {
+            //               if (filePath.Contains(ignoreDirectoryNames[i])) return;
+            //            }
+
+            //           ProgressInfo.ShowProgress(ignoreDirectoryNames.ToString(), ProgressInfo.Stage.FileStartParse);
+            if (filePath.Contains(".dart_tool") || filePath.Contains("build") || 
+                filePath.Contains("sdk") || filePath.Contains("linux") || !filePath.Contains("lib") ||
+                filePath.Contains("test")|| filePath.Contains("windows") ||filePath.Contains("ios") ||filePath.Contains("android") ||
+filePath.EndsWith("g.dart") ||
+                !filePath.EndsWith(".dart"))
+            {
+                return;
+            }
+
+            ProgressInfo.ShowProgress(filePath, ProgressInfo.Stage.FileStartParse);
             if (rule is null)
                 return;
 

@@ -8,6 +8,7 @@ namespace CopyrightsApp
         public enum Stage
         {
             RuleImporting,
+            FileStartParse,
             FileParsed,
             DocxOutputStarted,
             DocxOutputFinished,
@@ -21,6 +22,9 @@ namespace CopyrightsApp
             {
                 case Stage.RuleImporting:
                     progressInfo = string.Format("{0} 文件处理规则已导入", info);
+                    break;
+                case Stage.FileStartParse:
+                    progressInfo = string.Format("开始处理 {0}", info);
                     break;
                 case Stage.FileParsed:
                     progressInfo = string.Format("已处理 {0}", info);

@@ -13,6 +13,7 @@ namespace CopyrightsApp
 
         public Regex BlockCommentRegex = null;
 
+
         public void GenerateRegex()
         {
             if (LineComment != string.Empty)

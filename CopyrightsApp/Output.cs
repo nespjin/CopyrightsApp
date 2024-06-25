@@ -36,7 +36,7 @@ namespace CopyrightsApp
                     Paragraph codeLine = outputDocx.InsertParagraph(codeLines.ReadLine());
                     codeLine.FontSize(StandardFontSize);
                     index++;
-                } while (codeLines.Peek() != -1 && index <= 3060);
+                } while (codeLines.Peek() != -1 && index <= 4060);
 
                 outputDocx.Save();
             }

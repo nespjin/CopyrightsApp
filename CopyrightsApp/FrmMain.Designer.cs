@@ -33,23 +33,23 @@
             // 
             // listBoxProgress
             // 
+            this.listBoxProgress.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.listBoxProgress.Font = new System.Drawing.Font("宋体", 9F);
             this.listBoxProgress.FormattingEnabled = true;
             this.listBoxProgress.HorizontalScrollbar = true;
             this.listBoxProgress.ItemHeight = 18;
-            this.listBoxProgress.Location = new System.Drawing.Point(14, 157);
+            this.listBoxProgress.Location = new System.Drawing.Point(0, 359);
             this.listBoxProgress.Name = "listBoxProgress";
-            this.listBoxProgress.Size = new System.Drawing.Size(600, 256);
+            this.listBoxProgress.Size = new System.Drawing.Size(842, 256);
             this.listBoxProgress.TabIndex = 0;
             this.listBoxProgress.TabStop = false;
             // 
             // textBoxSourceDir
             // 
             this.textBoxSourceDir.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.textBoxSourceDir.Location = new System.Drawing.Point(80, 15);
+            this.textBoxSourceDir.Location = new System.Drawing.Point(107, 8);
             this.textBoxSourceDir.Name = "textBoxSourceDir";
-            this.textBoxSourceDir.ReadOnly = true;
-            this.textBoxSourceDir.Size = new System.Drawing.Size(300, 30);
+            this.textBoxSourceDir.Size = new System.Drawing.Size(489, 30);
             this.textBoxSourceDir.TabIndex = 1;
             // 
             // btnSourceDir
@@ -59,9 +59,9 @@
             this.btnSourceDir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSourceDir.Font = new System.Drawing.Font("宋体", 9F);
             this.btnSourceDir.ForeColor = System.Drawing.Color.White;
-            this.btnSourceDir.Location = new System.Drawing.Point(386, 15);
+            this.btnSourceDir.Location = new System.Drawing.Point(602, 8);
             this.btnSourceDir.Name = "btnSourceDir";
-            this.btnSourceDir.Size = new System.Drawing.Size(85, 23);
+            this.btnSourceDir.Size = new System.Drawing.Size(103, 30);
             this.btnSourceDir.TabIndex = 3;
             this.btnSourceDir.Text = "选择目录";
             this.btnSourceDir.UseVisualStyleBackColor = false;
@@ -70,7 +70,7 @@
             // labelSourceDir
             // 
             this.labelSourceDir.AutoSize = true;
-            this.labelSourceDir.Location = new System.Drawing.Point(11, 18);
+            this.labelSourceDir.Location = new System.Drawing.Point(12, 12);
             this.labelSourceDir.Name = "labelSourceDir";
             this.labelSourceDir.Size = new System.Drawing.Size(89, 20);
             this.labelSourceDir.TabIndex = 5;
@@ -89,11 +89,12 @@
             // 
             // buttonStartParsing
             // 
+            this.buttonStartParsing.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonStartParsing.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(181)))), ((int)(((byte)(50)))));
             this.buttonStartParsing.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(181)))), ((int)(((byte)(50)))));
             this.buttonStartParsing.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonStartParsing.ForeColor = System.Drawing.Color.White;
-            this.buttonStartParsing.Location = new System.Drawing.Point(483, 15);
+            this.buttonStartParsing.Location = new System.Drawing.Point(711, 0);
             this.buttonStartParsing.Name = "buttonStartParsing";
             this.buttonStartParsing.Size = new System.Drawing.Size(131, 123);
             this.buttonStartParsing.TabIndex = 7;
@@ -104,9 +105,9 @@
             // tbName
             // 
             this.tbName.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.tbName.Location = new System.Drawing.Point(80, 81);
+            this.tbName.Location = new System.Drawing.Point(107, 78);
             this.tbName.Name = "tbName";
-            this.tbName.Size = new System.Drawing.Size(391, 30);
+            this.tbName.Size = new System.Drawing.Size(489, 30);
             this.tbName.TabIndex = 12;
             // 
             // label2
@@ -129,26 +130,27 @@
             "Go",
             "Vue",
             "Python",
-            "WeApp"});
-            this.cbRule.Location = new System.Drawing.Point(80, 49);
+            "WeApp",
+            "Flutter"});
+            this.cbRule.Location = new System.Drawing.Point(107, 44);
             this.cbRule.Name = "cbRule";
-            this.cbRule.Size = new System.Drawing.Size(391, 28);
+            this.cbRule.Size = new System.Drawing.Size(489, 28);
             this.cbRule.TabIndex = 15;
             // 
             // tbOutput
             // 
             this.tbOutput.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.tbOutput.Location = new System.Drawing.Point(80, 115);
+            this.tbOutput.Location = new System.Drawing.Point(107, 134);
             this.tbOutput.Name = "tbOutput";
             this.tbOutput.ReadOnly = true;
-            this.tbOutput.Size = new System.Drawing.Size(300, 30);
+            this.tbOutput.Size = new System.Drawing.Size(489, 30);
             this.tbOutput.TabIndex = 8;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.label1.Location = new System.Drawing.Point(11, 119);
+            this.label1.Location = new System.Drawing.Point(12, 137);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(89, 20);
             this.label1.TabIndex = 13;
@@ -162,9 +164,9 @@
             this.btnOutput.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOutput.Font = new System.Drawing.Font("宋体", 9F);
             this.btnOutput.ForeColor = System.Drawing.Color.White;
-            this.btnOutput.Location = new System.Drawing.Point(386, 115);
+            this.btnOutput.Location = new System.Drawing.Point(602, 134);
             this.btnOutput.Name = "btnOutput";
-            this.btnOutput.Size = new System.Drawing.Size(85, 23);
+            this.btnOutput.Size = new System.Drawing.Size(98, 34);
             this.btnOutput.TabIndex = 9;
             this.btnOutput.Text = "选择路径";
             this.btnOutput.UseVisualStyleBackColor = false;
@@ -173,7 +175,7 @@
             // FrmMain
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(634, 461);
+            this.ClientSize = new System.Drawing.Size(842, 615);
             this.Controls.Add(this.cbRule);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
